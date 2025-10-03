@@ -7,7 +7,14 @@ about:
     - icon: github
       text: Github
       href: https://github.com/etc5523-2022
+    - icon: github
+      text: Github
+      href: https://github.com/etc5523-2022
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+# Hi there!
+
+I’m a Master of Business Analytics student with a background in economics and marketing.  
+My academic and professional experiences have focused on sustainability consulting and data analysis, where I’ve explored the intersection of climate challenges and business decision-making.  
+I’m particularly interested in how data can be used to uncover insights on climate, economics, and corporate strategy.  
