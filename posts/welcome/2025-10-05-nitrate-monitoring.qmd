@@ -2,11 +2,20 @@
 title: "Welcome To My Blog Template"
 author: "Malaika Fernandes"
 date: "2022-10-05"
-categories: [news]
+categories: [environment, climate data]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
+## Why we care about aquatic nitrate levels {#sec-problem}
 ![](thumbnail.jpg)
+
+*TLDR;*
+*Excess nitrates turn healthy rivers and aquatic ecosystems into lifeless green pools*
+
+They accelerate **eutrophication** - a process where nutrient overload fuels excessive algal blooms that block sunlight, deplete oxygen levels, and suffocate aquatic life. As a result, ecosystems struggle to recover, and biodiversity declines. 
+
+An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems. Nitrate sensors are expensive and difficult to maintain. 
+
+Recent research by Kermorvant et al., 2023  explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit. 
+
 
 
