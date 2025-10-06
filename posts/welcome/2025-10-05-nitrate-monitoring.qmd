@@ -74,3 +74,7 @@ Each site recorded nitrate and several other (inexpensive to measure) water qual
 </table>
 
 These variables were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**. 
+
+## How the model works {#sec-analysis}
+  
+![Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.](var-importance.png){#fig-importance width=90%}
