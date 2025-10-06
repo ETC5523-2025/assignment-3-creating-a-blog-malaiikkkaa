@@ -27,4 +27,47 @@ The study drew on high-frequency data from the U.S. National Ecological Observat
 
 -   **Lewis Run (VA)**
 
-Each site recorded nitrate and several inexpensive covariates every 15 minutes (shown in the table below).
+Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes. 
+
+<table id="tbl-vars">
+  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics.</caption>
+  <thead>
+    <tr>
+      <th>Water quality variable</th>
+      <th>Description</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elevation of surface water</td>
+      <td>Proxy for flow and rainfall events</td>
+      <td>Meters above sea level</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>Water temperature</td>
+      <td>°C</td>
+    </tr>
+    <tr>
+      <td>Specific conductance</td>
+      <td>Salinity / ionic content μ S/cm</td>
+      <td>μ S/cm</td>
+    </tr>
+    <tr>
+      <td>Dissolved oxygen</td>
+      <td>Indicator of biological activity</td>
+      <td>mg/L DO</td>
+    </tr>
+    <tr>
+      <td>Turbidity</td>
+      <td>Cloudiness of water (log-transformed)</td>
+      <td>FNU</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>Captures seasonal patterns</td>
+      <td>Minutes</td>
+    </tr>
+  </tbody>
+</table>
