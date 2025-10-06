@@ -76,5 +76,9 @@ Each site recorded nitrate and several other (inexpensive to measure) water qual
 These variables were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**. 
 
 ## How the model works {#sec-analysis}
+
+To connect these measurements, the researchers built a **Generalised Additive Model (GAMM)**. Put simply, this model allows each variable to have a flexible, curved relationship with nitrates and adjusts for time-based correlation; because yesterday's river chemistry influences today's.
   
 ![Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.](var-importance.png){#fig-importance width=90%}
+
+As shown in @fig-importance, these six water-quality variables are able to consistently explain variation across all rivers. This shows that the model has significant explanatory power, and variation across sites is due to different agricultural catchments. This consistency means **monitoring programs can rely on a standard, low-cost set of indicators instead of expensive nitrate sensors**.
