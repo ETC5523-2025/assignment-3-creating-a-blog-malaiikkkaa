@@ -82,3 +82,9 @@ To connect these measurements, the researchers built a **Generalised Additive Mo
 ![Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.](var-importance.png){#fig-importance width=90%}
 
 As shown in @fig-importance, these six water-quality variables are able to consistently explain variation across all rivers. This shows that the model has significant explanatory power, and variation across sites is due to different agricultural catchments. This consistency means **monitoring programs can rely on a standard, low-cost set of indicators instead of expensive nitrate sensors**.
+
+## Why this matters {#sec-conclusion}
+This research demonstrates that **a simple, transparent modelling framework can substitute for costly sensor networks** without losing insight. 
+For governments, regulatory bodies, and environmental organisations, that's powerful: similar models can be built and retrained on local data and still perform well. 
+
+Beyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices. 
