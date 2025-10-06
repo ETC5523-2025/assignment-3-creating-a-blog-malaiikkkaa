@@ -7,7 +7,7 @@ categories: [environment, climate data]
 
 ## Why we care about aquatic nitrate levels {#sec-problem}
 
-![](thumbnail.jpg)
+![](eutrophication.webp)
 
 *TLDR;* *Excess nitrates turn healthy rivers and aquatic ecosystems into lifeless green pools*
 
