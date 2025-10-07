@@ -3,6 +3,7 @@ title: "Welcome To My Blog Template"
 author: "Malaika Fernandes"
 date: "2022-10-05"
 categories: [environment, climate data]
+bibliography: ../references.bib
 ---
 
 ## Why we care about aquatic nitrate levels {#sec-problem}
@@ -15,7 +16,7 @@ They accelerate **eutrophication** - a process where nutrient overload fuels exc
 
 An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems. Nitrate sensors are expensive and difficult to maintain.
 
-Recent research by Kermorvant et al., 2023 explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit.
+Recent research by [@kermorvant2023] explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit.
 
 
 ## About the data {#sec-data}
@@ -28,10 +29,10 @@ The study drew on high-frequency data from the U.S. National Ecological Observat
 
 -   **Lewis Run (VA)**
 
-Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes. 
+Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes. These are described in @tbl-vars
 
 <table id="tbl-vars">
-  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics.</caption>
+  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics.{#tbl-vars}</caption>
   <thead>
     <tr>
       <th>Water quality variable</th>
