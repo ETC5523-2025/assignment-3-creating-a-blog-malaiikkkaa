@@ -2,3 +2,120 @@
 .navbar-dark, .quarto-title-banner {
   background-color: #006DAE;
 }
+
+/* Global background colours */
+body {
+  color: #222;
+  font-family: "Inter", "Helvetica Neue", 'Sans-Serif';
+  line-height: 1.6;
+  font-size: 1.05;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #440154;
+  font-weight: 700;
+  letter-spacing: 0.5px
+}
+
+/* Links */
+a {
+  color: #277f8e;                
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+a:hover {
+  color: #9fda3a;         
+}
+
+/* Navbar site header */
+.navbar {
+  background-color: #277f8e;    
+  color: white;
+  border: none;
+}
+.navbar a {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #9fda3a !important;
+}
+
+/* Buttons  */
+.btn, .btn-primary {
+  background-color: #2596be;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+.btn:hover, .btn-primary:hover {
+  background-color: #277f8e;
+  color: #9fda3a;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #277f8e;  
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+caption {
+  caption-side: bottom;
+  font-style: italic;
+  color: #440154;
+  margin-top: 4px;
+}
+
+/* Figures and images */
+figure, img {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 1.2em 0;
+}
+
+/* Code chunks */
+pre, code {
+  background-color: #f3f6f6;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.9rem;
+  color: #440154;
+}
+
+/* Callouts and blockquotes */
+blockquote {
+  border-left: 5px solid #277f8e;
+  background-color: #f5f7f7;
+  padding: 10px 16px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Footer */
+footer, .footer {
+  background-color: #440154;
+  color: #e7eaeb;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  margin-top: 2em;
+}
