@@ -10,6 +10,8 @@ website:
         href: https://github.com/malaiikkkaa
 format:
   html:
+    title-block-banner: "#e7eaeb"
+    title-block-banner-color: "#440154"
     theme: cosmo
     css: styles.css
 
