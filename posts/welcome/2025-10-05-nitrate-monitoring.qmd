@@ -31,31 +31,56 @@ Recent research by [@kermorvant2023] explored whether we can use predictive mode
 The study drew on high-frequency data from the U.S. National Ecological Observatory Network (NEON). Three different sites were analysed:
 
 -   **Arikaree (CO)**
-
 -   **Caribou (AK)**
-
 -   **Lewis Run (VA)**
 
 Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes.
 
 ::: {#tbl-vars}
-+----------------------------+---------------------------------------+------------------------+
-| Water quality variable     | Description                           | Unit                   |
-+============================+=======================================+========================+
-| Elevation of surface water | Proxy for flow and rainfall events    | Meters above sea level |
-+----------------------------+---------------------------------------+------------------------+
-| Temperature                | Water temperature                     | °C                     |
-+----------------------------+---------------------------------------+------------------------+
-| Specific conductance       | Salinity / ionic content μ S/cm       | μ S/cm                 |
-+----------------------------+---------------------------------------+------------------------+
-| Dissolved oxygen           | Indicator of biological activity      | mg/L DO                |
-+----------------------------+---------------------------------------+------------------------+
-| Turbidity                  | Cloudiness of water (log-transformed) | FNU                    |
-+----------------------------+---------------------------------------+------------------------+
-| Time                       | Captures seasonal patterns            | Minutes                |
-+----------------------------+---------------------------------------+------------------------+
-
-: **Table 1.** Key variables used to explain nitrate concentration dynamics. {#tbl-vars}
+<div>
+<table>
+  <caption>Key variables used to explain nitrate concentration dynamics.</caption>
+  <thead>
+    <tr>
+      <th>Water quality variable</th>
+      <th>Description</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elevation of surface water</td>
+      <td>Proxy for flow and rainfall events</td>
+      <td>Meters above sea level</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>Water temperature</td>
+      <td>°C</td>
+    </tr>
+    <tr>
+      <td>Specific conductance</td>
+      <td>Salinity / ionic content</td>
+      <td>μS/cm</td>
+    </tr>
+    <tr>
+      <td>Dissolved oxygen</td>
+      <td>Indicator of biological activity</td>
+      <td>mg/L DO</td>
+    </tr>
+    <tr>
+      <td>Turbidity</td>
+      <td>Cloudiness of water (log-transformed)</td>
+      <td>FNU</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>Captures seasonal patterns</td>
+      <td>Minutes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 :::
 
 These variables shown in [Table 1](#tbl-vars) were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**.
@@ -77,9 +102,7 @@ This means that once calibrated, the model can be transferred for new locations 
 Still, the authors noted a few caveats:
 
 -   The models were **not designed for prediction** far beyond the observed data.
-
 -   They relied on **continuous data streams**, so missing sensor readings could still affect accuracy.
-
 -   **Local land use** (like nearby farms) could change the nitrate--variable relationship over time.
 
 ## Why this matters {#sec-conclusion}
@@ -87,3 +110,19 @@ Still, the authors noted a few caveats:
 This research demonstrates that **a simple, transparent modelling framework can substitute for costly sensor networks** without losing insight. For governments, regulatory bodies, and environmental organisations, that's powerful: similar models can be built and retrained on local data and still perform well.
 
 Beyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices.
+
+## Looking ahead {sec-future}
+
+The promise of this work goes beyond water quality. It shows how **open data, smart modelling, and reproducible methods** can stretch limited environmental budgets further.  
+If governments and research agencies adopt frameworks like this, they can:
+
+- **Monitor more rivers** without increasing costs  
+- **Detect pollution events faster**, guiding intervention  
+- **Build transparent models** that communities and scientists can both trust  
+
+In a world facing tighter resources and climate uncertainty, tools like these help us move from reactive cleanup to **proactive protection** of ecosystems.
+
+## 💡 Key takeaway
+
+> Predictive models powered by open data don’t replace science — they make it more accessible.  
+> By using common water-quality measurements, we can safeguard rivers even where advanced sensors aren’t feasible.
