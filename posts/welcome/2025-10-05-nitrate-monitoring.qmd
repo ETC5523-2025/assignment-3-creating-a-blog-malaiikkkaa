@@ -14,18 +14,17 @@ bibliography: ../references.bib
 
 They accelerate **eutrophication** - a process where nutrient overload fuels excessive algal blooms that block sunlight, deplete oxygen levels, and suffocate aquatic life. As a result, ecosystems struggle to recover, and biodiversity declines.
 
-An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems. 
+An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems.
 
 ## Why traditional monitoring falls short {#sec-context}
 
-Monitoring nitrate levels usually depends on **in-situ sensors** that measure concentration continuously. While highly accurate, they come with several challenges: 
+Monitoring nitrate levels usually depends on **in-situ sensors** that measure concentration continuously. While highly accurate, they come with several challenges:
 
 -   **Cost**: High-quality sensors cost thousands of dollars each, making large-scale deployment difficult.
 -   **Maintenance**: They require frequent cleaning, calibration, and replacement due to fouling.
 -   **Coverage gaps**: Many rivers, especially smaller or remote catchments, lack long-term monitoring infrastructure.
 
 Recent research by [@kermorvant2023] explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit.
-
 
 ## About the data {#sec-data}
 
@@ -39,63 +38,52 @@ The study drew on high-frequency data from the U.S. National Ecological Observat
 
 Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes.
 
-<div id="tbl-vars">
-<table>
-  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics. {#tbl-vars}</caption>
-  <thead>
-    <tr>
-      <th>Water quality variable</th>
-      <th>Description</th>
-      <th>Unit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Elevation of surface water</td>
-      <td>Proxy for flow and rainfall events</td>
-      <td>Meters above sea level</td>
-    </tr>
-    <tr>
-      <td>Temperature</td>
-      <td>Water temperature</td>
-      <td>°C</td>
-    </tr>
-    <tr>
-      <td>Specific conductance</td>
-      <td>Salinity / ionic content μ S/cm</td>
-      <td>μ S/cm</td>
-    </tr>
-    <tr>
-      <td>Dissolved oxygen</td>
-      <td>Indicator of biological activity</td>
-      <td>mg/L DO</td>
-    </tr>
-    <tr>
-      <td>Turbidity</td>
-      <td>Cloudiness of water (log-transformed)</td>
-      <td>FNU</td>
-    </tr>
-    <tr>
-      <td>Time</td>
-      <td>Captures seasonal patterns</td>
-      <td>Minutes</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+::: {#tbl-vars}
++----------------------------+---------------------------------------+------------------------+
+| Water quality variable     | Description                           | Unit                   |
++============================+=======================================+========================+
+| Elevation of surface water | Proxy for flow and rainfall events    | Meters above sea level |
++----------------------------+---------------------------------------+------------------------+
+| Temperature                | Water temperature                     | °C                     |
++----------------------------+---------------------------------------+------------------------+
+| Specific conductance       | Salinity / ionic content μ S/cm       | μ S/cm                 |
++----------------------------+---------------------------------------+------------------------+
+| Dissolved oxygen           | Indicator of biological activity      | mg/L DO                |
++----------------------------+---------------------------------------+------------------------+
+| Turbidity                  | Cloudiness of water (log-transformed) | FNU                    |
++----------------------------+---------------------------------------+------------------------+
+| Time                       | Captures seasonal patterns            | Minutes                |
++----------------------------+---------------------------------------+------------------------+
 
-These variables shown in [Table 1](#tbl-vars) were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**. 
+: **Table 1.** Key variables used to explain nitrate concentration dynamics. {#tbl-vars}
+:::
+
+These variables shown in [Table 1](#tbl-vars) were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**.
 
 ## How the model works {#sec-analysis}
 
 To connect these measurements, the researchers built a **Generalised Additive Model (GAMM)**. Put simply, this model allows each variable to have a flexible, curved relationship with nitrates and adjusts for time-based correlation; because yesterday's river chemistry influences today's.
-  
-![Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.](var-importance.png){#fig-importance width=90%}
+
+![Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.](var-importance.png){#fig-importance width="90%"}
 
 As shown in @fig-importance, these six water-quality variables are able to consistently explain variation across all rivers. This shows that the model has significant explanatory power, and variation across sites is due to different agricultural catchments. This consistency means **monitoring programs can rely on a standard, low-cost set of indicators instead of expensive nitrate sensors**.
 
-## Why this matters {#sec-conclusion}
-This research demonstrates that **a simple, transparent modelling framework can substitute for costly sensor networks** without losing insight. 
-For governments, regulatory bodies, and environmental organisations, that's powerful: similar models can be built and retrained on local data and still perform well. 
+## What the results showed {#sec-results}
 
-Beyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices. 
+The modelling framework achieved **over 99% explanatory power** for nitrate concentrations across all three sites - an exceptionally strong performance.
+
+This means that once calibrated, the model can be transferred for new locations without starting from scratch; a *major* efficiency gain for environmental monitoring.
+
+Still, the authors noted a few caveats:
+
+-   The models were **not designed for prediction** far beyond the observed data.
+
+-   They relied on **continuous data streams**, so missing sensor readings could still affect accuracy.
+
+-   **Local land use** (like nearby farms) could change the nitrate--variable relationship over time.
+
+## Why this matters {#sec-conclusion}
+
+This research demonstrates that **a simple, transparent modelling framework can substitute for costly sensor networks** without losing insight. For governments, regulatory bodies, and environmental organisations, that's powerful: similar models can be built and retrained on local data and still perform well.
+
+Beyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices.
