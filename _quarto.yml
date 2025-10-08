@@ -14,6 +14,10 @@ format:
     title-block-banner-color: "#440154"
     theme: cosmo
     css: styles.css
-
+    toc: true
+    toc-location: left
+    toc-title: "On this page"
+    toc-depth: 3
+    toc-expand: true
 
 
