@@ -14,7 +14,15 @@ bibliography: ../references.bib
 
 They accelerate **eutrophication** - a process where nutrient overload fuels excessive algal blooms that block sunlight, deplete oxygen levels, and suffocate aquatic life. As a result, ecosystems struggle to recover, and biodiversity declines.
 
-An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems. Nitrate sensors are expensive and difficult to maintain.
+An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems. 
+
+## Why traditional monitoring falls short {#sec-context}
+
+Monitoring nitrate levels usually depends on **in-situ sensors** that measure concentration continuously. While highly accurate, they come with several challenges: 
+
+-   **Cost**: High-quality sensors cost thousands of dollars each, making large-scale deployment difficult.
+-   **Maintenance**: They require frequent cleaning, calibration, and replacement due to fouling.
+-   **Coverage gaps**: Many rivers, especially smaller or remote catchments, lack long-term monitoring infrastructure.
 
 Recent research by [@kermorvant2023] explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit.
 
