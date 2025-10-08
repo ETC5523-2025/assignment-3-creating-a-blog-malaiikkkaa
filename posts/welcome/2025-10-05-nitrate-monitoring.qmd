@@ -1,5 +1,5 @@
 ---
-title: "Welcome To My Blog Template"
+title: "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters"
 author: "Malaika Fernandes"
 date: "2022-10-05"
 categories: [environment, climate data]
@@ -19,12 +19,13 @@ bibliography: ../references.bib
   </figcaption>
 </figure>
 
+It isn’t *just* oil spills or plastics that cause the most silent damage — it’s the slow, steady rise of nitrates that turns life-filled waters into suffocating green zones.
 
-*TLDR;* *Excess nitrates turn healthy rivers and aquatic ecosystems into lifeless green pools*
+> **Eutrophication** occurs when excess nutrients (especially nitrates) accumulate in water bodies, triggering dense algal blooms. These blooms block sunlight, deplete oxygen levels, and suffocate aquatic life. Over time, the ecosystem becomes imbalanced and biodiversity declines.
 
-They accelerate **eutrophication** - a process where nutrient overload fuels excessive algal blooms that block sunlight, deplete oxygen levels, and suffocate aquatic life. As a result, ecosystems struggle to recover, and biodiversity declines.
+Nitrate buildup is a major driver of eutrophication. High nitrate levels often result from agricultural runoff, wastewater discharge, and industrial pollution. Once in the water, these nutrients can persist, making it difficult for ecosystems to recover even after pollution sources are reduced.
 
-An obvious solution presents itself: *continuous monitoring and preventative measures can be taken to ensure safe nitrate levels*. However, this isn't as feasible as it seems.
+Continuous monitoring could help detect rising nitrate concentrations early, but installing and maintaining high-frequency nitrate sensors is expensive. As a result, researchers are exploring whether **low-cost water-quality variables** (like temperature, dissolved oxygen, and water level) can be used to **predict nitrate concentrations** instead.
 
 ## Why traditional monitoring falls short {#sec-context}
 
