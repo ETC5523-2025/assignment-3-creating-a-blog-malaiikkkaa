@@ -29,10 +29,11 @@ The study drew on high-frequency data from the U.S. National Ecological Observat
 
 -   **Lewis Run (VA)**
 
-Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes. These are described in @tbl-vars
+Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes.
 
-<table id="tbl-vars">
-  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics.{#tbl-vars}</caption>
+<div id="tbl-vars">
+<table>
+  <caption><strong>Table 1.</strong> Key variables used to explain nitrate concentration dynamics. {#tbl-vars}</caption>
   <thead>
     <tr>
       <th>Water quality variable</th>
@@ -73,8 +74,9 @@ Each site recorded nitrate and several other (inexpensive to measure) water qual
     </tr>
   </tbody>
 </table>
+</div>
 
-These variables were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**. 
+These variables shown in [Table 1](#tbl-vars) were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**. 
 
 ## How the model works {#sec-analysis}
 
