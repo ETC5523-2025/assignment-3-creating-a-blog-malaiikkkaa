@@ -8,7 +8,17 @@ bibliography: ../references.bib
 
 ## Why we care about aquatic nitrate levels {#sec-problem}
 
-![](eutrophication.webp)
+<figure>
+  <img src="eutrophication.webp" 
+       alt="A lake covered in green algal bloom caused by nutrient pollution, an example of eutrophication." />
+  <figcaption>
+    Illustration of eutrophication. Source: 
+    <a href="https://www.worldatlas.com/articles/what-is-eutrophication.html" target="_blank">
+      WorldAtlas (2023)
+    </a>.
+  </figcaption>
+</figure>
+
 
 *TLDR;* *Excess nitrates turn healthy rivers and aquatic ecosystems into lifeless green pools*
 
@@ -111,7 +121,7 @@ This research demonstrates that **a simple, transparent modelling framework can 
 
 Beyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices.
 
-## Looking ahead {sec-future}
+## Looking ahead {#sec-future}
 
 The promise of this work goes beyond water quality. It shows how **open data, smart modelling, and reproducible methods** can stretch limited environmental budgets further.  
 If governments and research agencies adopt frameworks like this, they can:
