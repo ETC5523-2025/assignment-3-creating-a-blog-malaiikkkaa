@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "",
+    "text": "Illustration of eutrophication. Source:  WorldAtlas (2023) .\n\n\nIt isn’t just oil spills or plastics that cause the most silent damage — it’s the slow, steady rise of nitrates that turns life-filled waters into suffocating green zones.\n\nEutrophication occurs when excess nutrients (especially nitrates) accumulate in water bodies, triggering dense algal blooms. These blooms block sunlight, deplete oxygen levels, and suffocate aquatic life. Over time, the ecosystem becomes imbalanced and biodiversity declines.\n\nNitrate buildup is a major driver of eutrophication. High nitrate levels often result from agricultural runoff, wastewater discharge, and industrial pollution. Once in the water, these nutrients can persist, making it difficult for ecosystems to recover even after pollution sources are reduced.\nContinuous monitoring could help detect rising nitrate concentrations early, but installing and maintaining high-frequency nitrate sensors is expensive. As a result, researchers are exploring whether low-cost water-quality variables (like temperature, dissolved oxygen, and water level) can be used to predict nitrate concentrations instead."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-problem",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-problem",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "",
+    "text": "Illustration of eutrophication. Source:  WorldAtlas (2023) .\n\n\nIt isn’t just oil spills or plastics that cause the most silent damage — it’s the slow, steady rise of nitrates that turns life-filled waters into suffocating green zones.\n\nEutrophication occurs when excess nutrients (especially nitrates) accumulate in water bodies, triggering dense algal blooms. These blooms block sunlight, deplete oxygen levels, and suffocate aquatic life. Over time, the ecosystem becomes imbalanced and biodiversity declines.\n\nNitrate buildup is a major driver of eutrophication. High nitrate levels often result from agricultural runoff, wastewater discharge, and industrial pollution. Once in the water, these nutrients can persist, making it difficult for ecosystems to recover even after pollution sources are reduced.\nContinuous monitoring could help detect rising nitrate concentrations early, but installing and maintaining high-frequency nitrate sensors is expensive. As a result, researchers are exploring whether low-cost water-quality variables (like temperature, dissolved oxygen, and water level) can be used to predict nitrate concentrations instead."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-context",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-context",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "Why traditional monitoring falls short",
+    "text": "Why traditional monitoring falls short\nMonitoring nitrate levels usually depends on in-situ sensors that measure concentration continuously. While highly accurate, they come with several challenges:\n\nCost: High-quality sensors cost thousands of dollars each, making large-scale deployment difficult.\nMaintenance: They require frequent cleaning, calibration, and replacement due to fouling.\nCoverage gaps: Many rivers, especially smaller or remote catchments, lack long-term monitoring infrastructure.\n\nRecent research by (Kermorvant et al. 2023) explored whether we can use predictive modelling to assess nitrate concentrations using common, low-cost water-quality measures such as temperature, dissolved oxygen, and water level. If this works, governments and environmental regulatories can monitor nitrate levels and overall water health far more cheaply, contributing significantly to social and environmental benefit."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-data",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-data",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "About the data",
+    "text": "About the data\nThe study drew on high-frequency data from the U.S. National Ecological Observatory Network (NEON). Three different sites were analysed:\n\nArikaree (CO)\nCaribou (AK)\nLewis Run (VA)\n\nEach site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes.\n\n\n\nTable 1\n\n\n\n\nKey variables used to explain nitrate concentration dynamics.\n\n\n\n\nWater quality variable\n\n\nDescription\n\n\nUnit\n\n\n\n\n\n\nElevation of surface water\n\n\nProxy for flow and rainfall events\n\n\nMeters above sea level\n\n\n\n\nTemperature\n\n\nWater temperature\n\n\n°C\n\n\n\n\nSpecific conductance\n\n\nSalinity / ionic content\n\n\nμS/cm\n\n\n\n\nDissolved oxygen\n\n\nIndicator of biological activity\n\n\nmg/L DO\n\n\n\n\nTurbidity\n\n\nCloudiness of water (log-transformed)\n\n\nFNU\n\n\n\n\nTime\n\n\nCaptures seasonal patterns\n\n\nMinutes\n\n\n\n\n\n\n\nThese variables shown in Table 1 were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the target variable."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-analysis",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-analysis",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "How the model works",
+    "text": "How the model works\nTo connect these measurements, the researchers built a Generalised Additive Model (GAMM). Put simply, this model allows each variable to have a flexible, curved relationship with nitrates and adjusts for time-based correlation; because yesterday’s river chemistry influences today’s.\n\n\n\n\n\n\nFigure 1: Variable importance for nitrate covariates across sites. Source: Kermorvant et al. (2023), PLOS ONE, CC-BY 4.0.\n\n\n\nAs shown in Figure 1, these six water-quality variables are able to consistently explain variation across all rivers. This shows that the model has significant explanatory power, and variation across sites is due to different agricultural catchments. This consistency means monitoring programs can rely on a standard, low-cost set of indicators instead of expensive nitrate sensors."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-results",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-results",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "What the results showed",
+    "text": "What the results showed\nThe modelling framework achieved over 99% explanatory power for nitrate concentrations across all three sites - an exceptionally strong performance.\nThis means that once calibrated, the model can be transferred for new locations without starting from scratch; a major efficiency gain for environmental monitoring.\nStill, the authors noted a few caveats:\n\nThe models were not designed for prediction far beyond the observed data.\nThey relied on continuous data streams, so missing sensor readings could still affect accuracy.\nLocal land use (like nearby farms) could change the nitrate–variable relationship over time."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-conclusion",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-conclusion",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "Why this matters",
+    "text": "Why this matters\nThis research demonstrates that a simple, transparent modelling framework can substitute for costly sensor networks without losing insight. For governments, regulatory bodies, and environmental organisations, that’s powerful: similar models can be built and retrained on local data and still perform well.\nBeyond water science, it highlights how open data and reproducible analytics can make environmental monitoring more affordable and scalable, creating a lasting impact on climate reslience and sustainable business practices."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-future",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#sec-future",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "Looking ahead",
+    "text": "Looking ahead\nThe promise of this work goes beyond water quality. It shows how open data, smart modelling, and reproducible methods can stretch limited environmental budgets further.\nIf governments and research agencies adopt frameworks like this, they can:\n\nMonitor more rivers without increasing costs\n\nDetect pollution events faster, guiding intervention\n\nBuild transparent models that communities and scientists can both trust\n\nIn a world facing tighter resources and climate uncertainty, tools like these help us move from reactive cleanup to proactive protection of ecosystems."
+  },
+  {
+    "objectID": "posts/welcome/2025-10-05-nitrate-monitoring.html#key-takeaway",
+    "href": "posts/welcome/2025-10-05-nitrate-monitoring.html#key-takeaway",
+    "title": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters",
+    "section": "💡 Key takeaway",
+    "text": "💡 Key takeaway\n\nPredictive models powered by open data don’t replace science — they make it more accessible.\nBy using common water-quality measurements, we can safeguard rivers even where advanced sensors aren’t feasible."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me!",
+    "section": "",
+    "text": "My name is Malaika Fernandes, and I’m currently pursuing a Master of Business Analytics at Monash University. I previously completed my Bachelor of Commerce at the University of Melbourne, majoring in Economics and Marketing.\nMy academic and professional experiences have centred on sustainability consulting and data analysis, where I’ve worked on projects exploring how data-driven insights can guide sustainable business decisions. From evaluating climate-tech investment opportunities to improving operational efficiency in organisations, I’m passionate about finding practical ways to align climate goals with economic outcomes.\nBeyond my studies, I love exploring creativity in everyday life — whether that’s thrifting unique finds, going to music festivals, or trying new foods around Melbourne. These experiences keep me curious and open-minded, values I bring into both my work and my approach to problem-solving."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "Unseen Nutrients, Unseen Damage: Why Nitrate Monitoring Matters\n\n\n\n\n\n\nenvironment\n\n\nclimate data\n\n\n\n\n\n\n\n\n\nOct 5, 2022\n\n\nMalaika Fernandes\n\n\n\n\n\n\nNo matching items"
+  }
+]

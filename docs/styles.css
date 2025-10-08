@@ -1,0 +1,151 @@
+/* css styles 
+.navbar-dark, .quarto-title-banner {
+  background-color: #006DAE;
+} */
+
+/* Global background colours */
+body {
+  color: #222;
+  font-family: "Inter", "Helvetica Neue", 'Sans-Serif';
+  line-height: 1.6;
+  font-size: 1.05;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #440154;
+  font-weight: 700;
+  letter-spacing: 0.5px
+}
+
+/* Links */
+a {
+  color: #277f8e;                
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+a:hover {
+  color: #9fda3a;         
+}
+
+/* Navbar site header */
+.navbar {
+  background-color: #277f8e;    
+  color: white;
+  border: none;
+}
+.navbar a {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #9fda3a !important;
+}
+
+/* Buttons  */
+.btn, .btn-primary {
+  background-color: #440154;   
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+} 
+
+.btn:hover, .btn-primary:hover {
+  background-color: #277f8e;
+  color: #9fda3a;
+}
+
+/* Tables */
+div > table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+
+div > table th,
+div > table td {
+  border: 1px solid #ddd !important;
+  padding: 10px;
+  text-align: left;
+}
+
+div > table th {
+  background-color: #277f8e !important;
+  color: white;
+}
+
+div > table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+div > table caption {
+  caption-side: bottom;
+  font-style: italic;
+  color: #440154;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* Figures and images */
+figure, img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 5px solid #277f8e;
+  background-color: #f5f7f7;
+  padding: 10px 16px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Footer */
+footer, .footer {
+  background-color: #440154;
+  color: #e7eaeb;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  margin-top: 2em;
+}
+
+/* Removing the grey title banner */
+.quarto-title-banner,
+.quarto-title-block {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Post titles should be purple */
+.quarto-title h1.title,
+.listing-title {
+  color: #440154 !important;
+}
+
+/* Category buttons */
+.quarto-category,
+.listing-categories .category {
+  background-color: #f3e8ff !important;  /* light lavender */
+  color: #440154 !important;              /* purple text */
+  border: 1px solid #dec4ff !important;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.quarto-category:hover,
+.listing-categories .category:hover {
+  background-color: #e9d5ff !important;
+  color: #3b0764 !important;
+  border-color: #c4b5fd !important;
+}
