@@ -1,5 +1,6 @@
 ---
-title: "About"
+title: "About me!"
+toc: false
 image: profile.jpg
 about:
   template: jolla
@@ -10,10 +11,7 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/malaika-fernandes-7727b2263/
-
 ---
-
-# Hi there!
 
 My name is Malaika Fernandes, and I’m currently pursuing a Master of Business Analytics at Monash University. I previously completed my Bachelor of Commerce at the University of Melbourne, majoring in Economics and Marketing.
 

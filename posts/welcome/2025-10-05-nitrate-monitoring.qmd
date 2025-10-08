@@ -48,7 +48,6 @@ The study drew on high-frequency data from the U.S. National Ecological Observat
 Each site recorded nitrate and several other (inexpensive to measure) water quality variables every 15 minutes.
 
 ::: {#tbl-vars}
-<div>
 <table>
   <caption>Key variables used to explain nitrate concentration dynamics.</caption>
   <thead>
@@ -91,7 +90,6 @@ Each site recorded nitrate and several other (inexpensive to measure) water qual
     </tr>
   </tbody>
 </table>
-</div>
 :::
 
 These variables shown in [Table 1](#tbl-vars) were measured using affordable sensors already common in water-quality programs. Only the nitrate sensor, the most expensive component, was treated as the **target variable**.

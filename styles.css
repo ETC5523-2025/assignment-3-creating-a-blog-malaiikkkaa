@@ -46,43 +46,50 @@ a:hover {
 
 /* Buttons  */
 .btn, .btn-primary {
-  background-color: #2596be;
+  background-color: #440154;   
   border: none;
   color: white;
   font-weight: 500;
   border-radius: 8px;
   padding: 8px 16px;
   transition: all 0.3s ease;
-}
+} 
+
 .btn:hover, .btn-primary:hover {
   background-color: #277f8e;
   color: #9fda3a;
 }
 
 /* Tables */
-table {
+div > table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5em 0;
   font-size: 0.95rem;
 }
-th, td {
-  border: 1px solid #ddd;
+
+div > table th,
+div > table td {
+  border: 1px solid #ddd !important;
   padding: 10px;
   text-align: left;
 }
-th {
-  background-color: #277f8e;  
+
+div > table th {
+  background-color: #277f8e !important;
   color: white;
 }
-tr:nth-child(even) {
+
+div > table tr:nth-child(even) {
   background-color: #f7f7f7;
 }
-caption {
+
+div > table caption {
   caption-side: bottom;
   font-style: italic;
   color: #440154;
   margin-top: 4px;
+  text-align: center;
 }
 
 /* Figures and images */
@@ -92,16 +99,7 @@ figure, img {
   border-radius: 12px;
 }
 
-/* Code chunks */
-pre, code {
-  background-color: #f3f6f6;
-  border-radius: 6px;
-  padding: 2px 6px;
-  font-size: 0.9rem;
-  color: #440154;
-}
-
-/* Callouts and blockquotes */
+/* Blockquotes */
 blockquote {
   border-left: 5px solid #277f8e;
   background-color: #f5f7f7;
@@ -118,4 +116,36 @@ footer, .footer {
   padding: 12px 0;
   font-size: 0.9rem;
   margin-top: 2em;
+}
+
+/* Removing the grey title banner */
+.quarto-title-banner,
+.quarto-title-block {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Post titles should be purple */
+.quarto-title h1.title,
+.listing-title {
+  color: #440154 !important;
+}
+
+/* Category buttons */
+.quarto-category,
+.listing-categories .category {
+  background-color: #f3e8ff !important;  /* light lavender */
+  color: #440154 !important;              /* purple text */
+  border: 1px solid #dec4ff !important;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.quarto-category:hover,
+.listing-categories .category:hover {
+  background-color: #e9d5ff !important;
+  color: #3b0764 !important;
+  border-color: #c4b5fd !important;
 }
