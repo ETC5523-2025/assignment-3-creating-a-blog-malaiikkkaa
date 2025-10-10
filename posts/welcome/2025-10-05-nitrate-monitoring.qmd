@@ -135,3 +135,11 @@ In a world facing tighter resources and climate uncertainty, tools like these he
 
 > Predictive models powered by open data don’t replace science — they make it more accessible.  
 > By using common water-quality measurements, we can safeguard rivers even where advanced sensors aren’t feasible.
+
+## GAI Declaration 
+
+I used GAI in the following ways to create this blog: 
+- to help resolve issues in the cross referencing 
+- to create the references.bib file
+
+The link to my AI queries can be accessed [here](https://chatgpt.com/share/68e8817c-6d94-8013-a654-a99611d3fb36)
